@@ -10,7 +10,7 @@ import utilities.DataProviderClass;
 
 public class LoginTest extends BaseTest {
     @Test(dataProviderClass = DataProviderClass.class, dataProvider = "test")
-    public void TestLoginSuccessful(String username, String password){
+    public void testLoginSuccessful(String username, String password){
         Login loginPage = homePage.clickAuthenticationButton();
         loginPage.setUsername(username);
         loginPage.setPassword(password);

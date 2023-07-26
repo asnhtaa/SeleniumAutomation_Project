@@ -8,7 +8,7 @@ import pages.Keypress;
 
 public class KeypressTest extends BaseTest {
     @Test
-    public void TestBackspaceSuccessful(){
+    public void testBackspaceSuccessful(){
         Keypress keypressPage = homePage.clickKeypressButton();
         keypressPage.enterText("A"+Keys.BACK_SPACE);
         Assert.assertTrue(keypressPage.getResult().contains("BACK_SPACE"), "Result is incorrect");

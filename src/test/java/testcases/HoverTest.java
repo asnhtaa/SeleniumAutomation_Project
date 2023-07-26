@@ -7,7 +7,7 @@ import pages.Hover;
 
 public class HoverTest extends BaseTest {
     @Test
-    public void TestHover1Successful(){
+    public void testHover1Successful(){
         Hover hoverPage = homePage.clickHoverButton();
         Hover.FigureCaption figureCaption = hoverPage.hoverOverFigure(1);
         Assert.assertTrue(figureCaption.isCaptionDisplayed(), "Caption is not displayed");

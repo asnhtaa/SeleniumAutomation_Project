@@ -7,7 +7,7 @@ import pages.Alert;
 
 public class AlertTest extends BaseTest {
     @Test
-    public void TestAlertSuccessful() {
+    public void testAlertSuccessful() {
         Alert alertPage = homePage.clickAlertButton();
         alertPage.triggerAlert();
         alertPage.acceptAlert();
@@ -15,7 +15,7 @@ public class AlertTest extends BaseTest {
     }
 
     @Test
-    public void TestConfirmSuccessful() {
+    public void testConfirmSuccessful() {
         Alert alertPage = homePage.clickAlertButton();
         alertPage.triggerConfirmAlert();
         alertPage.dismissConfirmAlert();
@@ -23,7 +23,7 @@ public class AlertTest extends BaseTest {
     }
 
     @Test
-    public void TestPromptSuccessful() {
+    public void testPromptSuccessful() {
         Alert alertPage = homePage.clickAlertButton();
         alertPage.triggerPromptAlert();
         String inputText = "Hello!";
