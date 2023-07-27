@@ -22,6 +22,9 @@ import utils.WindowManager;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 public class BaseTest {
@@ -53,6 +56,7 @@ public class BaseTest {
         goHome();
         homePage = new HomePage(driver);
         driver.manage().window().maximize();
+        createScreenshotDirectory();
     }
     @BeforeMethod
     public void goHome(){
@@ -82,6 +86,18 @@ public class BaseTest {
     }
     public CookieManager getCookieManager(){
         return new CookieManager(driver);
+    }
+
+    private void createScreenshotDirectory() {
+        Path screenshotDir = Paths.get("resources/screenshots");
+        if (!Files.exists(screenshotDir)) {
+            try {
+                Files.createDirectories(screenshotDir);
+            } catch (IOException e) {
+                e.printStackTrace();
+                throw new RuntimeException("Failed to create screenshot directory!");
+            }
+        }
     }
 
 
