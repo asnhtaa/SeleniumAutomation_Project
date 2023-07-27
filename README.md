@@ -21,7 +21,7 @@ This project is a Selenium automation framework developed in Java that aims to t
 java -version
 ```
 
-2) Install Apache Maven on your system. You can download it from the Apache Maven website and follow the installation instructions for your operating system.
+2) Install Apache Maven on your system. You can download it from the [Apache Maven website] (https://maven.apache.org/) and follow the installation instructions for your operating system.
 
 3) Clone this repository to your local machine
 
