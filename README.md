@@ -13,7 +13,7 @@ This project is a Selenium automation framework developed in Java that aims to t
 * Log4j 2.20.0 for logging
 * Apache POI 5.2.3 for Excel file handling
 
-## Project Setup Instructions
+## Setup Instructions
 
 1) Install Java Development Kit (JDK) on your system. You can download the JDK from the [official Oracle website](https://www.oracle.com/). Verify your Java installation by running the following command in the terminal or command prompt:
    
